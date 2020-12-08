@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="bg-img">
+    
+    <ion-row>
+      <ion-col size-xs="3" offset-xs="3">
+        <ion-img style="width: 150px;" src="../../assets/auth.png"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-card>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" ></ion-input>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+  
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </ion-card>
+  <div class="container-button ion-margin-vertical">
+    <button class="btn signin" (click)="onSignIn()" >SIGN IN</button>
+  </div>
+  <div class="container-button ion-margin-vertical">
+    <button class="btn register" routerLink="/register" >REGISTER</button>
+    <button class="btn pwd-reset" routerLink="/pwd-reset" >RESET PASSWORD</button>
+  </div>
+  </div>
+</ion-content>
